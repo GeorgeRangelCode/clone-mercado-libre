@@ -4,10 +4,10 @@ import { initialState } from '../iniialState';
 const useInitialState = () => {
   const [state, setState] = useState(initialState);
 
-  const getItems = async (payload) => {
+  const setData = async (payload) => {
     setState({
       ...state,
-      items: payload,
+      data: payload,
     });
   };
 
@@ -26,7 +26,7 @@ const useInitialState = () => {
   };
 
   return {
-    getItems,
+    setData,
     setLoading,
     setError,
     state,

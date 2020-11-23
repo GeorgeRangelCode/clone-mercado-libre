@@ -4,24 +4,23 @@ import AppContext from '../context/AppContext';
 
 const useGetItems = () => {
   let history = useHistory();
-  const { getItems, setLoading, setError } = useContext(AppContext);
+  const { setData, setLoading, setError } = useContext(AppContext);
 
   const getResults = async (query) => {
     try {
       setLoading(true);
       const response = await fetch(
-        `https://api.mercadolibre.com/sites/MLA/search?q=${query}`
+        `https://api-clone-mercado-libre.vercel.app/api/items?q=${query}`
       );
-      const result = await response.json();
-
-      if (result.error) {
+      const data = await response.json();
+      if (data.error) {
         setError(true);
-        getItems(result.results);
         setLoading(false);
+        setData(data);
       } else {
         setLoading(false);
         setError(false);
-        getItems(result.results);
+        setData(data);
         history.push(`/items?search=${query}`);
       }
     } catch (error) {
