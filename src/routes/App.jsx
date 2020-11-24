@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from '../containers/Home';
+import Detail from '../containers/Detail';
 import NotFound from '../containers/NotFound';
 import Layout from '../components/Layout';
 import AppContext from '../context/AppContext';
@@ -16,6 +17,7 @@ const App = () => {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/items" component={Home} />
+            <Route path="/items/:id" component={Detail} />
             <Route component={NotFound} />
           </Switch>
         </Layout>
