@@ -1,16 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React, { useContext } from 'react';
+import Breadcrumb from '../components/Breadcrumb';
 import Loading from '../components/Loading';
 import NoData from '../components/NoData';
 import useGetItem from '../hooks/useGetItem';
+import AppContext from '../context/AppContext';
 import '../styles/containers/Detail.scss';
 
 const Detail = ({ match }) => {
+  const { state } = useContext(AppContext);
   const id = match.params.id;
-
   const { item, error } = useGetItem({ id });
 
   return (
     <div className="Home">
+      <div className="ItemsList-container">
+        <Breadcrumb categories={state.data.categories} />
+      </div>
       {error.error ? (
         <NoData message={error.text} />
       ) : item.id ? (
