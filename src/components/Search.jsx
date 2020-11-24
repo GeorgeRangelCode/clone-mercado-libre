@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/components/Search.scss';
 import logo from '../assets/logo.png';
 import useSearch from '../hooks/useSearch';
+import '../styles/components/Search.scss';
 
 const Search = ({ onSubmit }) => {
   const { handleSubmit, HandleSearch } = useSearch({ onSubmit });

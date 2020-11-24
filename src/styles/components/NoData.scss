@@ -1,0 +1,29 @@
+.NoData {
+  padding-top: 50px;
+
+  .NoData-content {
+    padding: 20px;
+    border-radius: 4px;
+    margin: 0px auto;
+    max-width: 40%;
+    height: auto;
+    color: #fff;
+    background-color: #273674;
+
+    .NoData-title {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    .NoData-text {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .NoData-content {
+      max-width: 90%;
+    }
+  }
+}

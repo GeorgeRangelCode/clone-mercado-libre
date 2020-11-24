@@ -1,0 +1,20 @@
+.Breadcrumb-container {
+  padding: 15px 0px;
+}
+
+.Breadcrumb {
+  display: inline-block;
+  margin-right: 7px;
+  color: #aaaaaa;
+  font-size: 12px;
+
+  i {
+    margin-left: 7px;
+    border: solid #cccccc;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+}

@@ -1,0 +1,11 @@
+.Home {
+  background-color: #eeeeee;
+  min-height: 100vh;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+  .Home {
+    padding: 0px 10px 30px 10px;
+  }
+}
