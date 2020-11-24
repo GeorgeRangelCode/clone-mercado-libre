@@ -17,7 +17,7 @@ const Item = ({ info, categories }) => {
         </Link>
         <div className="Item-general-info">
           <p className="Item-price">
-            $ {info.price.amount}
+            $ {Intl.NumberFormat('de-DE').format(info.price.amount)}
             {info.price.decimals ? (
               <span className="Item-price-decimals">{info.price.decimals}</span>
             ) : null}
@@ -37,7 +37,7 @@ const Item = ({ info, categories }) => {
           </Link>
         </div>
         <div className="Item-location">
-          <p>{info.condition === 'new' ? 'Nuevo' : 'Usado'}</p>
+          <p>{info.address.state_name}</p>
         </div>
       </div>
     </div>

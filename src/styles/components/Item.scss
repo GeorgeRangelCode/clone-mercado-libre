@@ -9,47 +9,53 @@
   img {
     width: 180px;
     height: 180px;
-    border-radius: 5px;
+    border-radius: 4px;
+    margin-left: 6px;
   }
 
   @media (max-width: 480px) {
     img {
       width: 100px;
       height: 100px;
-      border-radius: 5px;
+      border-radius: 4px;
     }
   }
 }
 
 .Item-info {
   display: flex;
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
 .Item-general-info {
-  flex: 9;
-  margin-left: 10px;
+  flex: 7;
+  margin-left: 16px;
 }
 
 .Item-title {
   text-decoration: none;
   color: initial;
+  color: #333333;
+  font-size: 18px;
 }
 
 @media (max-width: 480px) {
   .Item-title p {
     font-size: 14px;
+    color: #333333;
   }
 }
 
 .Item-location {
-  flex: 1;
+  flex: 3;
+  display: flex;
 }
 
 .Item-price {
   display: inline-block;
-  padding-bottom: 30px;
-  font-size: 22px;
+  padding-bottom: 32px;
+  font-size: 24px;
+  color: #333333;
 }
 
 @media (max-width: 480px) {
@@ -62,6 +68,7 @@
   font-size: 12px;
   position: relative;
   bottom: 7px;
+  color: #333333;
 }
 
 .Item-price-free-shipping {
@@ -81,5 +88,6 @@
     color: #888;
     font-size: 12px;
     position: relative;
+    margin-top: 8px;
   }
 }

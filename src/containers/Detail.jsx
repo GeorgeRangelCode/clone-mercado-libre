@@ -32,20 +32,15 @@ const Detail = ({ match }) => {
               </p>
               <h5 className="Item-detail-title">{item.title}</h5>
               <h3 className="Item-detail-price">
-                $ {item.price.amount}
-                {item.price.decimals ? (
-                  <span className="Item-price-decimals">
-                    {item.price.decimals}
-                  </span>
-                ) : null}
+                $ {Intl.NumberFormat('de-DE').format(item.price.amount)}
               </h3>
               <button className="Item-detail-buy">Comprar</button>
             </div>
           </div>
           <div className="Item-detail-description">
-            <p className="Item-detail-description-title">
+            <h5 className="Item-detail-description-title">
               Descripción del producto
-            </p>
+            </h5>
             <p className="Item-detail-description-text">{item.description}</p>
           </div>
         </div>
