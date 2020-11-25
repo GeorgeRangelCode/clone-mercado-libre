@@ -18,7 +18,7 @@ App Challenge Clone Mercado Libre integrada con los siguientes endpoints:
 
 ![Captura detalle de articulo](./.readme_static/detail.png)
 
-[Ver la aplicación en http://clone-mercado-libre-git-main.georgerangelcode.vercel.app/](http://clone-mercado-libre-git-main.georgerangelcode.vercel.app/)
+`Ver la aplicación en:` [http://clone-mercado-libre-git-main.georgerangelcode.vercel.app/](http://clone-mercado-libre-git-main.georgerangelcode.vercel.app/)
 
 ## ¿Cómo funciona?
 
