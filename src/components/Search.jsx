@@ -11,7 +11,7 @@ const Search = ({ onSubmit }) => {
     <div className="Search">
       <form className="Search-container" onSubmit={handleSubmit}>
         <Link to={'/'}>
-          <img src={logo} alt="Logo Mercado Libre" />
+          <img src={logo} alt="Logo Mercado Libre" width="53" height="36" />
         </Link>
         <input
           className="Search-input"
@@ -20,6 +20,7 @@ const Search = ({ onSubmit }) => {
           onKeyUp={HandleSearch}
         />
         <button
+          aria-label="Buscar Articulos"
           type="submit"
           className="Search-btn"
           data-testid="Search-icon"
